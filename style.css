@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(244, 244, 244);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(78, 77, 77);
+}
+
+.headline{
+    text-align: center;
+}
+
+.headline button{
+    width: 100px;
+    padding: 10px;
+    margin: 5px;
+    border: 0;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.headline button:hover{
+    background-color:rgb(85, 125, 197); ;
+}
+
+.drinkOptions{
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.drinkCard{
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    gap: 15px;
+}
+
+.drinkCard img{
+    max-width: 100%;
+}
+
+.drinkInfo{
+    padding: 10px;
+    margin: 5px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(97, 163, 145);
+    color: white;
+}
+
+.drinkInfo:hover {
+    background-color: rgb(68, 116, 103);
+}
+
