@@ -1,0 +1,67 @@
+.game{
+    width: 50%;
+    margin: 100px auto;
+    display: grid;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(47, 47, 47);
+    background-color: rgb(227, 242, 234);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 7px 7px 7px rgb(190, 221, 231);
+}
+
+.game img{
+    width: 100%;
+}
+
+.game input {
+    padding: 10px;
+    background-color: rgb(222, 227, 233);
+    border: 0;
+    border-radius: 10px;
+}
+
+.game div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button{
+    padding:10px;
+    border: 0;
+    width: 44%;
+    background-color: cadetblue;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: rgb(62, 102, 103);
+}
+
+.playAgain{
+    background-color: rgb(59, 173, 173);
+    margin: 0 auto;
+}
+
+.playAgain:hover{
+    background-color: rgb(52, 147, 147);
+}
+
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(47, 47, 47);
+}
+
+.disable{
+    background-color: rgb(62, 102, 103);
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}

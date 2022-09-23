@@ -1,0 +1,74 @@
+body{
+    color: rgb(68, 68, 68);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.game{
+    padding: 20px;
+    background-color: rgb(207, 224, 225);
+    border-radius: 10px;
+    color: rgb(68, 68, 68);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.game input{
+    padding:10px ;
+    border: 0;
+    margin-bottom: 20px;
+    background-color: rgb(233, 242, 242);
+    border-radius:8px ;
+}
+
+.green{
+    color: rgb(98, 197, 107);
+}
+
+.startBtn{
+    padding:10px 15px;
+    border: 0;
+    border-radius: 7px;
+    background-color: cadetblue;
+    color: white;
+}
+
+.playAgain {
+    display: none;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 7px;
+    background-color: rgb(109, 95, 160);
+    color: white;
+}
+
+.hard{
+    margin: 20px;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 7px;
+    background-color: rgb(191, 87, 87);
+    color: white;
+}
+
+.easy {
+    margin: 20px;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 7px;
+    background-color: rgb(191, 183, 114);
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: inline-block;
+}
+
+h2{
+    text-align: center;
+}

@@ -1,0 +1,48 @@
+.game-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.scoreboard-wrapper {
+    width: 400px;
+}
+
+.gameboards {
+    width: 300px;
+}
+
+.gameboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button {
+    padding: 40px 20px;
+}
+
+.scoreboard,
+.gameboards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.round-number {
+    font-size: 32px;
+}
+
+.score {
+    font-size: 42px;
+    color: #00ff33;
+}
+
+.dices {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    letter-spacing: 9px;
+}
