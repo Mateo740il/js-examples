@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS - Final Test 02</title>
+    <link media="all" href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- start: header -->
+    <header id="header" class="header">
+      <!-- start: hamburger button -->
+      <button type="button" class="icon-button menu__icon">
+        <svg
+          class="icon-button__icon"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 16 16"
+          style="enable-background: new 0 0 16 16"
+          xml:space="preserve"
+        >
+          <g id="menu">
+            <g>
+              <path
+                d="M14.898,1.701H1.102C0.494,1.701,0,2.194,0,2.803s0.494,1.102,1.102,1.102h13.795C15.506,3.906,16,3.412,16,2.803
+			S15.506,1.701,14.898,1.701z"
+              />
+              <path
+                d="M14.898,6.898H1.102C0.494,6.898,0,7.391,0,8s0.494,1.102,1.102,1.102h13.795C15.506,9.102,16,8.609,16,8
+			S15.506,6.898,14.898,6.898z"
+              />
+              <path
+                d="M16,13.197c0-0.609-0.494-1.102-1.102-1.102H1.102C0.494,12.094,0,12.588,0,13.197c0,0.609,0.494,1.102,1.102,1.102
+			h13.795C15.506,14.299,16,13.806,16,13.197z"
+              />
+            </g>
+          </g>
+        </svg>
+      </button>
+      <!-- end: hamburger button -->
+      <!-- start: main navigation -->
+      <nav class="main-navigation">
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#posts">Posts</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#calculator">Calculator</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#footer">Footer</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- end: main navigation -->
+      <!-- start: user button -->
+      <button type="button" class="icon-button userIcon">
+        <svg
+          class="icon-button__icon"
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 32 32"
+          style="enable-background: new 0 0 32 32"
+          xml:space="preserve"
+        >
+          <g>
+            <g>
+              <path
+                d="M16.1,18.1c-3,0-5.4-2.7-5.4-6s2.4-6,5.4-6c3,0,5.4,2.7,5.4,6C21.5,15.3,19.1,18.1,16.1,18.1L16.1,18.1z"
+              />
+            </g>
+            <g>
+              <path
+                d="M24.3,32H7.7c-0.6,0-1.1-0.5-1.1-1.1l-0.3-5.3c-0.2-2,1.4-4.2,3.3-4.9c4.2-1.5,8.7-1.5,12.8,0c2,0.7,3.5,3,3.3,5L25.4,31
+			C25.3,31.5,24.8,32,24.3,32L24.3,32z"
+              />
+            </g>
+          </g>
+        </svg>
+      </button>
+      <!-- end: user button -->
+    </header>
+    <!-- end: header -->
+    <!-- start: main -->
+    <main class="content">
+      <section id="users" class="section">
+        <h1 class="section__title">Random Users</h1>
+        <!-- start: filters -->
+        <div class="filters">
+          <button type="button" class="chip sortByName">
+            Sort by Last name
+          </button>
+          <button type="button" class="chip sortByCountry">
+            Sort by Country
+          </button>
+          <button type="button" class="chip chip--active sortByPostcode">
+            Sort by Postcode
+          </button>
+        </div>
+        <!-- end: filters -->
+        <!-- start: search -->
+        <form class="search" onsubmit="return false;">
+          <div class="search__field">
+            <input
+              class="search__input"
+              type="search"
+              name="search"
+              placeholder="Search"
+            />
+            <svg
+              class="search__icon"
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 32 32"
+              style="enable-background: new 0 0 32 32"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  d="M30.4,27.6l-7.8-7.8c1.4-2,2.2-4.3,2.2-6.9c0-6.6-5.3-11.9-11.9-11.9S1,6.4,1,12.9s5.3,11.9,11.9,11.9
+		c2.5,0,4.9-0.8,6.9-2.2l7.8,7.8c0.7,0.7,2,0.7,2.8,0l0,0C31.2,29.6,31.2,28.5,30.4,27.6z M12.9,22c-5,0-9.1-4.1-9.1-9.1
+		c0-5,4.1-9.1,9.1-9.1S22,7.9,22,12.9C22,18,17.9,22,12.9,22z"
+                />
+              </g>
+            </svg>
+          </div>
+        </form>
+        <!-- end: search -->
+        <!-- start: random users -->
+        <section class="section">
+          <table>
+            <thead>
+              <tr>
+                <th>name</th>
+                <th>country</th>
+                <th>postcode</th>
+                <th>date of birth (dob)</th>
+              </tr>
+            </thead>
+            <tbody id="users" class="usersTable">
+              <!-- start: user data that you have to generate -->
+              <!-- <tr>
+                <td>*name*</td>
+                <td>*country*</td>
+                <td>*postcode*</td>
+                <td>*dob*</td>
+              </tr> -->
+              <!-- end: user data that you have to generate -->
+            </tbody>
+          </table>
+        </section>
+        <!-- end: random users -->
+      </section>
+
+      <!-- start: calculator -->
+      <section id="calculator" class="section">
+        <button type="button" id="generateWord">Generate word</button>
+        <!-- start: generated dictionary -->
+        <section id="dictionary">
+          <section>
+            <h1 class="randomWord">*word*</h1>
+            <i>
+              <span class="phonetic">*phonetic*</span>
+            </i>
+            <h2 class="audioMsg"></h2>
+            <audio controls>
+              <source class="audioSrc" src="" type="audio/mp3" />
+              Your browser does not support the audio element.
+            </audio>
+            <ul>
+              <li>
+                <h2 class="partOfSpeech">*partOfSpeech*</h2>
+                <p class="definition">*definition*</p>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <!-- end: generated dictionary -->
+      </section>
+      <!-- end: calculator -->
+    </main>
+    <!-- end: main -->
+    <!-- start: footer -->
+    <footer id="footer" class="footer">
+      <div class="footer__content">
+        <ul class="footer__menu">
+          <li class="footer__menu-item">
+            <h4 class="footer__title">About Us</h4>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Social Media Influencers</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Careers</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Blog</a>
+          </li>
+        </ul>
+        <ul class="footer__menu">
+          <li class="footer__menu-item">
+            <h4 class="footer__title">Ticketing</h4>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">White Label Ticketing</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Facebook Ticketing</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">
+              iOS iPhone / iPad Ticketing</a
+            >
+          </li>
+        </ul>
+        <ul class="footer__menu">
+          <li class="footer__menu-item">
+            <h4 class="footer__title">Printing</h4>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link"> Ticket Printing </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Plastic Printing </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Drink Ticket Printing</a>
+          </li>
+        </ul>
+        <ul class="footer__menu">
+          <li class="footer__menu-item">
+            <h4 class="footer__title">Web Design</h4>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link"> Event Web Design </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Enterprise Solutions </a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#" class="footer__menu-link">Hosting</a>
+          </li>
+        </ul>
+      </div>
+      <p class="copyright">Frontend Bootcamp © 2021</p>
+    </footer>
+    <!-- end: footer -->
+    <!-- start: hamburger drawer -->
+    <div class="drawer drawer--hamburger">
+      <h3 class="drawer__title">Hamburger drawer</h3>
+    </div>
+    <!-- end: hamburger drawer -->
+    <!-- start: user drawer -->
+    <div class="drawer drawer--user">
+      <h3 class="drawer__title">User drawer</h3>
+    </div>
+    <!-- end: user drawer -->
+    <!-- start: overlay -->
+    <div class="overlay">
+      <div class="loader"></div>
+    </div>
+    <!-- end: overlay -->
+  </body>
+  <!-- <script type="text/javascript" src="scripts.js"></script> -->
+  <script type="text/javascript" src="script.js"></script>
+</html>
