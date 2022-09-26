@@ -1,0 +1,61 @@
+@import "variables";
+
+body {
+    height: 100%;
+    font-family: "DM Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $text-color;
+    text-align: left;
+    background-color: #F8F9FA;
+    margin: 0;
+}
+
+.list-no-style {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: $text-color;
+
+    & a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.purple__btn {
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border: 0;
+    background-color: #5768AD;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    font-weight: bold;
+
+    &:hover {
+        background-color: #425189;
+    }
+}
+
+.white__btn {
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: 1px solid grey;
+    background-color: white;
+    color: #5768AD;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    font-weight: bold;
+
+    &:hover {
+        background-color: #425189;
+        color: white;
+    }
+}

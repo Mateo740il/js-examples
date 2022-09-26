@@ -1,0 +1,27 @@
+body {
+    font-family: arial;
+    color: rgb(70, 70, 70);
+    background-color: rgb(228, 220, 220);
+}
+
+.pokemonCards {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pokemonCard {
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    background-color: rgb(111, 182, 229);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-transform: capitalize;
+}
+
+.pokemonCard:hover {
+    background-color: rgb(93, 139, 188);
+}

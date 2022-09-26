@@ -1,0 +1,80 @@
+.main__section__form {
+    &__headline {
+        width: 30%;
+        margin: 0 auto;
+        text-align: center;
+
+        h2 {
+            color: $text-color-black;
+            font-size: 2rem;
+        }
+    }
+
+    &__content {
+        width: 70%;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+
+        & form {
+            flex-basis: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            input {
+                padding: 15px 10px;
+                background-color: $input-color;
+                border: 0;
+            }
+
+            textarea {
+                padding: 15px 10px;
+                background-color: $input-color;
+                font-family: Arial, Helvetica, sans-serif;
+                border: 0;
+                max-width: 100%;
+            }
+
+            button {
+                width: 40%;
+            }
+
+        }
+
+        & .contact {
+            flex-basis: 40%;
+
+            img {
+                max-width: 100%;
+                padding-bottom: 20px;
+            }
+
+            address p {
+                color: $text-color-orange;
+            }
+        }
+    }
+
+    @include responsive(tablet) {
+        &__headline {
+            width: 50%;
+        }
+
+        &__content {
+            width: 90%;
+        }
+    }
+
+    @include responsive(mobile) {
+        &__headline {
+            width: 90%;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+}
