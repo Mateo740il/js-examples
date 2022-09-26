@@ -1,0 +1,118 @@
+.header__banner {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__info {
+        display: flex;
+        font-size: 0.8rem;
+
+        & li:not(:last-child) {
+            margin-right: 10px;
+
+            &::after {
+                content: " ·";
+            }
+        }
+
+        & a {
+            color: #263246;
+
+            :hover {
+                color: #263246;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    i {
+        display: none;
+    }
+
+    @include breakpoint(tablet) {
+        & ul {
+            display: none;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        & button {
+            display: none;
+        }
+
+        & i {
+            display: block;
+            font-size: x-large;
+        }
+    }
+}
+
+.header__main {
+    color: white;
+    background-image: url("assets/slider/hero-1.webp");
+    background-position: center;
+    background-size: auto;
+    height: 800px;
+
+    &__nav {
+        padding: 30px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & ul {
+            display: flex;
+            justify-content: space-between;
+
+            & li:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+
+        &__icon {
+            & i:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+
+    }
+
+    &__msg {
+        padding: 250px 100px;
+        width: 30%;
+    }
+
+    @include breakpoint(tablet) {
+        &__nav {
+            padding: 20px 50px;
+
+            & ul {
+                display: flex;
+                justify-content: space-between;
+
+                & li:not(:last-child) {
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        &__msg {
+            padding: 150px 50px;
+            width: 50%;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        &__nav {
+            margin: 0;
+            padding: 0;
+            display: none;
+        }
+
+        &__msg {
+            width: 60%;
+        }
+    }
+
+}

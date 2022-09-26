@@ -1,0 +1,39 @@
+.wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-basis: 100px;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.wrapper div{
+    background-color: rgb(244, 237, 226);
+    padding: 15px;
+    width:200px;
+    box-shadow: 7px 7px 4px 2px #888888;
+    border-radius:10px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ button{
+     display: block;
+    width:120px;
+    background-color: rgb(220, 147, 131);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: rgb(202, 113, 93);
+}
+
+.red{
+    background-color: rgb(202, 113, 93);
+}

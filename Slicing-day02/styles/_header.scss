@@ -1,0 +1,53 @@
+.header {
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/stage/stage.webp");
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+
+    &__nav {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: flex;
+
+            li:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+
+        & .fa-bars {
+            color: white;
+            font-size: 2rem;
+            display: none;
+        }
+    }
+
+    &__msg {
+        margin-left: 150px;
+        margin-top: 100px;
+        width: 40%;
+        color: white;
+    }
+
+    @include breakpoint(tablet) {
+        &__nav ul {
+            display: none;
+        }
+
+        &__msg {
+            width: 60%;
+            margin: 100px 50px;
+        }
+
+        & .fa-bars {
+            display: block;
+        }
+
+    }
+
+}

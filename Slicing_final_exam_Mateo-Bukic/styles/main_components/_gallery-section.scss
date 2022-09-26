@@ -1,0 +1,39 @@
+.main__section__gallery {
+    width: 70%;
+    margin: 100px auto;
+
+    &__headline {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__photos {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    @include responsive(tablet) {
+        width: 90%;
+
+        &__headline {
+            width: 70%;
+        }
+    }
+
+    @include responsive(mobile) {
+        width: 90%;
+
+        &__photos {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
