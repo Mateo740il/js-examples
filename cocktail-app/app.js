@@ -5,7 +5,6 @@ const getCocktail=async(name)=>{
     let res=await fetch(`https://thecocktaildb.com/api/json/v1/1/search.php?s=${name}`)
     let data=await res.json();
     let drinks=data.drinks
-    console.log(drinks);
     showDrinksInDOM(drinks)
 }
 
@@ -27,7 +26,6 @@ const showDrinksInDOM=(drinks)=>{
     });
     document.querySelectorAll(".drinkInfo").forEach(btn => {
         btn.addEventListener("click",(event)=>{
-            console.log(event.target.value);
             alert(event.target.value)
         })
     });
