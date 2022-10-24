@@ -1,0 +1,50 @@
+.header{
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(130, 20, 130);
+    color: $text-color-white;
+    box-shadow: 0 8px 10px 0 rgba(52, 47, 47, 0.2);
+
+    @include responsive(tablet){
+        padding: 20px 20px;
+    }
+
+    &__logo{
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    &__nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        & li:not(:last-child){
+            margin-right:25px;
+        }
+
+        & li:last-child{
+            display: none;
+        }
+
+        & a{
+            color: $text-color-white;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        @include responsive(tablet){
+            & li:not(:last-child){
+                display: none;
+            }
+
+            & li:last-child{
+                display: block;
+            }
+        }
+    }
+}

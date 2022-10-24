@@ -1,0 +1,90 @@
+.main{
+    width: 100%;
+    margin: 0 auto;
+
+    &__mobile__nav{
+        display: none;
+        box-shadow: 0 8px 10px 0 rgba(52, 47, 47, 0.2);
+        background-color: rgb(248, 242, 248);
+        text-align: right;
+        padding: 20px 20px;
+
+        & ul{
+        
+            & li{
+                padding: 20px 0;
+                
+                & a{
+                    color: $text-color-black;
+
+                    &:hover{
+                        color: $text-color-grey;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    &__tvShows__grid{
+        width: 80%;
+        margin: 100px auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 30px;
+
+        @include responsive(tablet){
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+        }
+
+        @include responsive(mobile){
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(1,1fr);
+        }
+
+        &__card{
+            margin-top: 40px;
+            text-align: center;
+           
+            & img{
+                max-width: 100%;
+                height: 400px;
+                border-radius: 10px;
+                box-shadow: 0 8px 10px 0 rgba(52, 47, 47, 0.2);
+            }
+        }
+    }
+
+    &__search{
+        width: 60%;
+        margin: 50px auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__input{
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-bottom: 3px solid purple;
+
+            &:focus{
+                border: none;
+            }
+        }
+
+        & span{
+            font-size: 2rem;
+            color: purple;
+            cursor: pointer;
+        }
+
+    }
+}
+
+.show{
+    display: block;
+}
