@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(229, 246, 246);
+    color: $text-color-black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.list__No-style{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    & a{
+        text-decoration: none;
+        color: $text-color-white;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.show{
+    display: flex;
+}

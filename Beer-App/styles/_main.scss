@@ -1,0 +1,148 @@
+.main{
+    position: relative;
+
+    &__mobileNav{
+        display: none;
+        background-color: rgb(60, 60, 60);
+        width: 30%;
+        height: 100vh;
+        position: absolute;
+        top: -50px;
+        right: 0;
+        text-align: center;
+        padding: 20px;
+
+        & ul li {
+            padding: 20px;
+            font-size: 1.2rem;
+
+            &:hover{
+                background-color: rgb(98, 73, 114);
+                border-radius: 10px;
+            }
+        }
+    }
+
+    &__form{
+        width: 30%;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        background-color:rgb(214, 230, 241);
+        padding: 30px;
+        border-radius: 15px;
+
+        @include responsive(tablet){
+            width: 50%;
+        }
+
+        @include responsive(mobile){
+            width: 70%;
+        }
+
+        & label{
+            padding: 20px 0 5px;
+        }
+
+        & input{
+            padding: 15px;
+            border: none;
+            border-radius:10px;
+            background-color: rgb(203, 192, 219);
+        }
+
+        & button{
+            padding: 15px;
+            width: 60%;
+            text-align: center;
+            margin: 25px auto;
+            background-color: rgb(93, 90, 176);
+            border: none;
+            border-radius:10px;
+            color: $text-color-white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+
+            &:hover{
+                background-color: rgb(76, 74, 144);
+            }
+        }
+    }
+
+    &__grid{
+        width: 80%;
+        margin: 50px auto;
+        display: grid;
+        visibility:hidden;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+
+        @include responsive(tablet){
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        @include responsive(mobile){
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        @include responsive(xsmall){
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__beerCard{
+            background-color: rgb(58, 58, 58);
+            padding: 20px;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            text-align: center;
+            gap: 20px;
+            color: white;
+            
+            & h2{
+                font-size: 1rem;
+            }
+
+            & button{
+                margin-top: 20px;
+                padding: 15px;
+                border-radius: 7px;
+                border: none;
+                background-color:  rgb(123, 90, 144);
+                color: white;
+
+                &:hover{
+                    background-color:  rgb(96, 72, 109);
+                }
+            }
+        }
+    }
+
+    &__beerInfo__card{
+        width: 40%;
+        background-color: rgb(77, 77, 77);
+        color: white;
+        margin: 50px auto;
+        padding: 50px;
+        text-align: center;
+        border-radius: 20px;
+
+        & h2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & span{
+                font-size: 2.5rem;
+            }
+        }
+
+        & img{
+            max-width: 10%;
+        }
+    }
+}

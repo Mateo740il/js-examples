@@ -1,0 +1,40 @@
+.footer{
+    padding: 20px 0;
+    background-color:  rgb(41, 41, 41);
+    color: white;
+    text-align: center;
+
+    &__mainInfo{
+        width: 80%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        @include responsive(mobile){
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include responsive(xsmall){
+            grid-template-columns: repeat(1, 1fr);
+        }
+        
+        & div{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+
+            & ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 20px;
+            }
+           
+        }
+    }
+
+    &__description{
+        margin-top: 100px;
+    }
+}

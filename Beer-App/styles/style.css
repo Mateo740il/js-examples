@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(229, 246, 246);
+  color: rgb(51, 51, 51);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.list__No-style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list__No-style a {
+  text-decoration: none;
+  color: rgb(240, 236, 236);
+}
+.list__No-style a:hover {
+  text-decoration: underline;
+}
+
+.show {
+  display: flex;
+}
+
+.header {
+  background-color: rgb(41, 41, 41);
+  padding: 10px 0;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.header__nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+.header__nav__logo span {
+  font-size: 3rem;
+  color: rgb(152, 118, 180);
+}
+.header__nav ul {
+  display: flex;
+  align-items: center;
+}
+.header__nav ul li:not(:last-child) {
+  margin-right: 70px;
+}
+@media only screen and (max-width: 800px) {
+  .header__nav ul li {
+    display: none;
+  }
+}
+.header__nav ul span {
+  font-size: 2rem;
+  display: none;
+  color: white;
+}
+@media only screen and (max-width: 800px) {
+  .header__nav ul span {
+    display: block;
+  }
+}
+
+.main {
+  position: relative;
+}
+.main__mobileNav {
+  display: none;
+  background-color: rgb(60, 60, 60);
+  width: 30%;
+  height: 100vh;
+  position: absolute;
+  top: -50px;
+  right: 0;
+  text-align: center;
+  padding: 20px;
+}
+.main__mobileNav ul li {
+  padding: 20px;
+  font-size: 1.2rem;
+}
+.main__mobileNav ul li:hover {
+  background-color: rgb(98, 73, 114);
+  border-radius: 10px;
+}
+.main__form {
+  width: 30%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(214, 230, 241);
+  padding: 30px;
+  border-radius: 15px;
+}
+@media only screen and (max-width: 800px) {
+  .main__form {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .main__form {
+    width: 70%;
+  }
+}
+.main__form label {
+  padding: 20px 0 5px;
+}
+.main__form input {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(203, 192, 219);
+}
+.main__form button {
+  padding: 15px;
+  width: 60%;
+  text-align: center;
+  margin: 25px auto;
+  background-color: rgb(93, 90, 176);
+  border: none;
+  border-radius: 10px;
+  color: rgb(240, 236, 236);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+.main__form button:hover {
+  background-color: rgb(76, 74, 144);
+}
+.main__grid {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  visibility: hidden;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+@media only screen and (max-width: 800px) {
+  .main__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 576px) {
+  .main__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 300px) {
+  .main__grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.main__grid__beerCard {
+  background-color: rgb(58, 58, 58);
+  padding: 20px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
+  gap: 20px;
+  color: white;
+}
+.main__grid__beerCard h2 {
+  font-size: 1rem;
+}
+.main__grid__beerCard button {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 7px;
+  border: none;
+  background-color: rgb(123, 90, 144);
+  color: white;
+}
+.main__grid__beerCard button:hover {
+  background-color: rgb(96, 72, 109);
+}
+.main__beerInfo__card {
+  width: 40%;
+  background-color: rgb(77, 77, 77);
+  color: white;
+  margin: 50px auto;
+  padding: 50px;
+  text-align: center;
+  border-radius: 20px;
+}
+.main__beerInfo__card h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__beerInfo__card h2 span {
+  font-size: 2.5rem;
+}
+.main__beerInfo__card img {
+  max-width: 10%;
+}
+
+.footer {
+  padding: 20px 0;
+  background-color: rgb(41, 41, 41);
+  color: white;
+  text-align: center;
+}
+.footer__mainInfo {
+  width: 80%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media only screen and (max-width: 576px) {
+  .footer__mainInfo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 300px) {
+  .footer__mainInfo {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.footer__mainInfo div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer__mainInfo div ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.footer__description {
+  margin-top: 100px;
+}/*# sourceMappingURL=style.css.map */
